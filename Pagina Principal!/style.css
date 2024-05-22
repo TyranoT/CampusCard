@@ -31,10 +31,14 @@ header {
     padding: 10px;
     
 }
-
+header #text-mark {
+    color: darkorange;
+}
 header h1 {
     padding-left: 20px;
     margin-top: 20px;
+    font-size: 2.5em;
+    padding-bottom: 20px;
 }
 
 nav {
@@ -215,7 +219,7 @@ main > #como_ajudar > div > p {
     padding: 40px;
     background-color: rgba(103, 122, 122, 0.13);
     margin: 0 20px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     border-radius: 25px 25px 0 0;
     box-shadow:  3px 2px 20px 0px black;
     width: 33%;
