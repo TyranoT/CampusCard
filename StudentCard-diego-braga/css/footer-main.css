@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    a:hover {
+        color: rgb(212, 207, 207);
+        transition: 0.35s;
+    }
+    li {
+        list-style: none;
+        margin-top: 10px;
+    }
+}
+
+footer {
+    background-image: url(https://s.tmimgcdn.com/scr/800x500/297400/textura-de-fundo-preto-escuro_297412-original.jpg);     
+    background-size: 5%;
+    background-color: black; 
+    color: whitesmoke;
+    margin: auto;
+    height: auto;
+}
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 40px;
+
+    
+    
+}
+.col1 {
+    display: flex;
+    justify-content: center;    
+    margin: 0 30px;
+    
+}
+.ul1 {
+    margin: 0 120px;
+    font-size: 1.0em;
+    margin-top: 20px;
+    
+     
+}
+hr{ 
+    border: 0.3px thin;    
+    border-color: rgba(255, 255, 255, 0.486);
+    width: 90%;    
+    margin: 20px auto;
+
+}
+.footerbottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*alinhamento horizontal */
+    padding: 7px;
+}
+.bottom {
+    display: inline-flex;
+    margin: 0 40px;
+}
+.part1bot > a {
+    margin: auto 20px;
+}
+#copyright::before {
+    content: '\00a9';
+    margin-right: 5px;
+}
+.part2bot > a {
+    margin: auto 10px;
+}
+.part2bot {
+    position: relative;
+    margin-inline-start: 50px;
+    
+}
+svg{
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 1650px) {
+    .ul1 {
+        margin: 0 60px;
+        font-size: 1.0em;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .ul1 {
+        margin: 0 20px;
+        width: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    footer{
+        margin: auto;
+        width: auto;
+    }
+    .ul1 {
+        font-size: auto;
+        margin: 5px 10px;
+        margin-top: 20px;
+
+        
+    }
+    
+    .col1 {
+        display: block;
+        margin: 0 auto;
+    }
+    .impar, .par{
+        margin: 20px;
+
+    }
+    .footerbottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .part1bot {
+        order: 2;
+        margin-top: 30px;
+        font-size: 1em;
+    }
+    .part2bot{
+        order: 1;
+        
+    }
+    .part2bot > a {
+        margin: auto 20px;
+    }
+}
+
+
+
+

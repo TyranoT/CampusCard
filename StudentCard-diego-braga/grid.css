@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    a:hover {
+        color: rgb(212, 207, 207);
+        transition: 0.35s;
+    }
+    li {
+        list-style: none;
+        margin-top: 10px;
+    }
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+header {
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+ nav {
+    margin: auto;
+    position: sticky;   
+    top: 0;
+    z-index: 1;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 30px;
+}
+main {
+    margin: auto;
+    
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define três colunas de tamanho igual */
+    grid-template-rows: auto; /* Define as linhas com altura automática */
+    gap: 10px; /* Define o espaçamento entre os itens do grid */
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+.grid-item {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.card {
+    background-image: linear-gradient(45deg, rgb(9, 22, 18), rgba(9, 22, 18, 0.788));
+    height: 12vw;
+    width: 20vw;
+    border-radius: 4%;
+    position: relative;
+    margin-top: 20px;
+    box-shadow: black 4px 3px 20px 0px;
+}
+
+
+
+
+
+
+
+.section-card {
+    grid-column: 1/4;
+    display: flex;
+    padding: 15px;
+    width: 70%;
+    margin: auto;
+    font-size: 1.4em;
+    justify-content: space-between;
+    
+}
+.section-card #texto3 {
+    width: 60%;
+    text-align: justify;
+    margin-top: 15px;
+}
+#order-link {
+    color: rgba(0, 0, 0, 0.664);
+}
+#order-link::after {
+    content: '🔗';
+}
+#order-link:hover {
+    background-color: black;
+    color: darkorange;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+.section1 {
+    grid-column: 1/4;
+    background-image: url(https://www.florence.edu.br/blog/wp-content/uploads/2021/08/Florence-dia-do-estudante.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+    background-color: rgba(0, 0, 0, 0.973);
+    border-radius: 5px 5px 0 0 ;
+    width: auto;
+    
+    
+}
+#texto1 {
+    margin-left: 52vw;
+    color: white;
+    font-size: 1.8em;
+    width: 30%;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.089);
+    padding: 10px;
+}
+
+.section2 {
+    grid-column: 1/4;
+    margin-top: -10px;
+    background-color: #1a1b0f;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    color: white;
+}
+.section2 h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+#texto2  {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+
+    
+}
+.colunas3 {
+    display: flex;
+    
+
+}
+.colunas3-content {
+    padding: 40px;
+    background-color: rgba(103, 122, 122, 0.13);
+    margin: 0 20px;
+    font-size: 1.9em;
+    border-radius: 25px 25px 0 0;
+    box-shadow:  3px 2px 20px 0px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-image: url(https://s.tmimgcdn.com/scr/800x500/297400/textura-de-fundo-preto-escuro_297412-original.jpg);     
+    background-size: 5%;
+    background-color: black; 
+    color: whitesmoke;
+    margin: auto;
+    height: auto;
+}
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 40px;
+
+    
+    
+}
+.col1 {
+    display: flex;
+    justify-content: center;    
+    margin: 0 30px;
+    
+}
+.ul1 {
+    margin: 0 120px;
+    font-size: 1.0em;
+    margin-top: 20px;
+    
+     
+}
+hr{ 
+    border: 0.3px thin;    
+    border-color: rgba(255, 255, 255, 0.486);
+    width: 90%;    
+    margin: 20px auto;
+
+}
+.footerbottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*alinhamento horizontal */
+    padding: 7px;
+}
+.bottom {
+    display: inline-flex;
+    margin: 0 40px;
+}
+.part1bot > a {
+    margin: auto 20px;
+}
+#copyright::before {
+    content: '\00a9';
+    margin-right: 5px;
+}
+.part2bot > a {
+    margin: auto 10px;
+}
+.part2bot {
+    position: relative;
+    margin-inline-start: 50px;
+    
+}
+svg{
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 1650px) {
+    .ul1 {
+        margin: 0 60px;
+        font-size: 1.0em;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .ul1 {
+        margin: 0 20px;
+        width: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    footer{
+        margin: auto;
+        width: auto;
+    }
+    .ul1 {
+        font-size: auto;
+        margin: 5px 10px;
+        margin-top: 20px;
+
+        
+    }
+    
+    .col1 {
+        display: block;
+        margin: 0 auto;
+    }
+    .impar, .par{
+        margin: 20px;
+
+    }
+    .footerbottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .part1bot {
+        order: 2;
+        margin-top: 30px;
+        font-size: 1em;
+    }
+    .part2bot{
+        order: 1;
+        
+    }
+    .part2bot > a {
+        margin: auto 20px;
+    }
+}
