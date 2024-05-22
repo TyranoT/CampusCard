@@ -1,0 +1,264 @@
+:root {
+    --font: Arial, Helvetica, sans-serif;
+    --font-beneficios: Georgia, serif;
+    --cor1: black;
+    --cor2: white;
+    --cor3: gray;
+}
+
+* {
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+
+header {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+    padding: 5px;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+section.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section.beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+section.beneficios .beneficio {
+    background-color: var(--cor2);
+    border: 1px solid var(--cor1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+    padding: 20px;
+    font-family: var(--font-beneficios);
+    font-size: 1.1em;
+    text-align: center;
+}
+
+section.beneficios .beneficio p {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+section.input {
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 20px; /* Padding for form container */
+    max-width: 1200px;  /* Align with the beneficios section */
+    margin: 40px auto;  /* Center the input section */
+}
+
+section.input .cabecalhodois h1 {
+    margin-bottom: 20px;
+}
+
+section.input .formulario {
+    display: inline-block;
+    text-align: left;
+    background-color: var(--cor2);
+    border: 1px solid var(--cor1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 20px 0 0; /* Padding after the form */
+}
+
+section.input .formulario label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+section.input .formulario .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cor1);
+    border-radius: 5px;
+}
+
+#itemList {
+    padding: 20px;
+    background-color: var(--cor2);
+    border: 1px solid var(--cor1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#itemList li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: var(--cor2);
+    border: 1px solid var(--cor1);
+    border-radius: 10px;
+    font-family: var(--font-beneficios);
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+footer {
+    background-image: url(https://s.tmimgcdn.com/scr/800x500/297400/textura-de-fundo-preto-escuro_297412-original.jpg);     
+    background-size: 30%;
+    background-color: black; 
+    color: whitesmoke;
+    margin: auto;
+    height: auto;
+}
+
+footer a:hover {
+    color: rgb(212, 207, 207);
+    transition: 0.35s;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 40px;
+}
+
+.col1 {
+    display: flex;
+    justify-content: center;    
+    margin: 0 30px;
+}
+
+.ul1 {
+    margin: 0 120px;
+    font-size: 1.0em;
+    margin-top: 20px;
+}
+
+hr {
+    border: 0.3px thin;    
+    border-color: rgba(255, 255, 255, 0.486);
+    width: 90%;    
+    margin: 20px auto;
+}
+
+.footerbottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+
+.bottom {
+    display: inline-flex;
+    margin: 0 40px;
+}
+
+.part1bot > a {
+    margin: auto 20px;
+}
+
+#copyright::before {
+    content: '\00a9';
+    margin-right: 5px;
+}
+
+.part2bot > a {
+    margin: auto 10px;
+}
+
+.part2bot {
+    position: relative;
+    margin-inline-start: 50px;
+}
+
+svg {
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 1650px) {
+    .ul1 {
+        margin: 0 60px;
+        font-size: 1.0em;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .ul1 {
+        margin: 0 20px;
+        width: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    footer {
+        margin: auto;
+        width: auto;
+    }
+    .ul1 {
+        font-size: auto;
+        margin: 5px 10px;
+        margin-top: 20px;
+    }
+    
+    .col1 {
+        display: block;
+        margin: 0 auto;
+    }
+    .impar, .par {
+        margin: 20px;
+    }
+    .footerbottom {
+        display: flex;
+        flex-direction: column;
+    }
+    .part1bot {
+        order: 2;
+        margin-top: 30px;
+        font-size: 1em;
+    }
+    .part2bot {
+        order: 1;
+    }
+    .part2bot > a {
+        margin: auto 20px;
+    }
+}
