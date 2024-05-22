@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #fff;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#contato {
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 50px auto; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.formulario h2 {
+    color: #000;
+}
+
+.formulario label {
+    display: block;
+    color: #000;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+.formulario button {
+    display: block; 
+    margin: 20px auto 0;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: px;
+    width: 100%;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.popup.show {
+    display: block;
+}
+
