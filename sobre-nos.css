@@ -111,8 +111,18 @@ picture {
     display: block;
     text-align: center;
 }
-
-
+#junte-se {
+    display: flex;
+    align-items: center;
+}
+#box-junte-se {
+    width: 40%;
+    font-size: larger;
+    
+}
+#img-junte-se {
+    margin-top: ;
+}
 
 footer {
     background-image: url(https://s.tmimgcdn.com/scr/800x500/297400/textura-de-fundo-preto-escuro_297412-original.jpg);     
@@ -121,6 +131,7 @@ footer {
     color: whitesmoke;
     margin: auto;
     height: auto;
+    margin-top: -19px;
 }
 
 footer a:hover {
