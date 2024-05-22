@@ -29,9 +29,7 @@ header {
     background-color: var(--cor1);
     color: var(--cor2);
     padding: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    
 }
 
 header h1 {
@@ -39,20 +37,23 @@ header h1 {
     margin-top: 20px;
 }
 
-header nav {
+nav {
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: space-around;
-    margin-top: 50px;
+    background-color: black;
+    z-index: 10;
 }
 
-header nav a {
+nav a {
     text-decoration: none;
     color: white;
     transition: .3s;
     padding: 5px;
 }
 
-header nav a:hover {
+nav a:hover {
     background-color: white;
     color: black;
     border-radius: 5px;
