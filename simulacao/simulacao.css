@@ -33,10 +33,15 @@ header {
     background-color: var(--cor1);
     color: var(--cor2);
     padding: 10px;
-    
+}
+
+header > h1 > #login {
+    color: white;
+    padding-right: 20px;
 }
 
 header #text-mark {
+    justify-content: none;
     color: darkorange;
 }
 
@@ -45,6 +50,8 @@ header h1 {
     margin-top: 20px;
     font-size: 2.5em;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav {
