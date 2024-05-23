@@ -27,12 +27,12 @@ header h1 {
     color: #fff;
     padding: 50px;
     text-align: center;
-    margin-top: 80px; /* Adicionado para dar espaço ao header fixo */
+    margin-top: 80px; 
 }
 
 .formulario {
     max-width: 600px;
-    margin: 0px auto; /* Alterado de 50px para 20px */
+    margin: 0px auto; 
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
