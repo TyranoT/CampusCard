@@ -1,0 +1,75 @@
+:root {
+    --color-1: #222831;
+    --color-2: #393E46;
+    --color-3: #EEEEEE;
+}
+
+.form-div {
+    align-items: center;
+    background-color: var(--color-2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.form-div > main {
+    background-image: linear-gradient(#222231, #222531, #222831);
+    border-radius: 0.5em;
+    opacity: 95%;
+    padding: 1em;
+}
+
+.form-div > footer {
+    align-items: center;
+    background-color: var(--color-1);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    opacity: 95%;
+    padding: 1em;
+    width: 90%;
+}
+
+.copy {
+    color: var(--color-3);
+    font-family: calibri;
+}
+
+@media (max-width: 480px) {
+    .form-div > main {
+        transition: 0.3s ease;
+        width: 90%;
+    }
+}
+
+@media (min-width: 481px ) and (max-width: 768px) {
+    .form-div > main {
+        transition: 0.3s ease;
+        width: 80%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .form-div > main {
+        transition: 0.3s ease;
+        width: 70%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .form-div > main {
+        transition: 0.3s ease;
+        width: 60%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .form-div > main {
+        transition: 0.3s ease;
+        width: 50%;
+    }
+}
