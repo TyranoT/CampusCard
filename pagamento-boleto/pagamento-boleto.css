@@ -94,7 +94,7 @@ main > section  p  #parcela {
 
 main > p  #gerar {
     position: relative;
-    top: 18vh;
+    top: 14vh;
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
@@ -118,9 +118,9 @@ footer {
     width: 100%;
     color: whitesmoke;
     margin: auto;
-    margin-top: 50px
+    margin-top: 20px;
     height: auto;
-    position: fixed;
+    
     bottom: 0;
 }
 
