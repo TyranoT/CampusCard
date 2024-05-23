@@ -1,12 +1,12 @@
 :root {
-    --color-1: #222831;
-    --color-2: #393E46;
+    --color-1: #222830;
+    --color-2: #393E45;
     --color-3: #EEEEEE;
 }
 
 .form-div {
     align-items: center;
-    background-color: var(--color-2);
+    background-image: linear-gradient(#393E40, #393E43, #393E45);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -17,7 +17,7 @@
 }
 
 .form-div > main {
-    background-image: linear-gradient(#222231, #222531, #222831);
+    background-image: linear-gradient(#222230, #222530, #222830);
     border-radius: 0.5em;
     opacity: 95%;
     padding: 1em;
