@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusCard - Benefícios</title>
+    <link rel="stylesheet" href="formulario-contato.css">
+</head>
+<body>
+    <header>
+        
+            <h1><a href="/main-page/main-page.html">Campus<span id="text-mark">Card</span></a></h1>
+        
+    </header>
+
+    <section id="contato">
+        <div class="formulario">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="" disabled selected>Selecione um assunto</option>
+                    <option value="Dúvida">Dúvida</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Sugestão">Sugestão</option>
+                    <option value="Outro">Outro</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CampusCard. Todos os direitos reservados.</p>
+    </footer>
+    
+    <div id="popup" class="popup">
+        <p id="popup-message">Mensagem enviada com sucesso!</p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

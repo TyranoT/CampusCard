@@ -1,52 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boleto</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        main>#caixa>p {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="main-page.css">
+    <title>CampusCard</title>
 </head>
-
 <body>
     <header>
         <h1>
-            STUDENTCARD
+            Campus<span id="text-mark">Card</span>
         </h1>
     </header>
+    <nav>
+        <a href="#"><strong>Sobre o CampusCard</strong></a>
+        <a href="#"><strong>Anuidade Zero</strong></a>
+        <a href="#"><strong>Benefícios</strong></a>
+        <a href="#"><strong>Simulação</strong></a>
+        <a href="#"><strong>Fale Conosco</strong></a>
+    </nav>
     <main>
-        <h2>
-            Pagamento do Boleto
-        </h2>
-        <section>
-            <p id="codigo">
-                Código de Barras: <input type="number" name="txtvalor" id="valor" required>
-            </p>
-            <p id="parcelamento">
-                Parcelamento:
-                <select name="Parcelamento" id="parcela">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                </select>
-            </p>
+        <section id="fase1">
+            <div id="card">
+                <img src="img/file.png" alt="chip_card">
+            </div>
+            <div id="peça">
+                <h2>
+                    Peça o seu cartão
+                </h2>
+                <p>
+                    <button><a href="#">PEÇA AQUI</a></button>
+                </p>
+            </div>
         </section>
-        <p>
-            <input type="button" value="PAGAR BOLETO" id="gerar" onclick="pagar()">
-        </p>
+        <section id="fase2">
+        <div id="sobre">
+            <h2>
+                Sobre o CampusCard
+            </h2>
+            <p>O CampusCard tem como objetivo principal te ajudar no pagamento da sua mensalidade universitária</p>
+        </div>
+        </section>
+        <section id="como_ajudar">
+            <div>
+                <h2>
+                    Como o CampusCard te ajudará?
+                </h2>
+                <p>
+                    PARCELANDO O BOLETO DA MENSALIDADE DA SUA FACULDADE SEM JUROS!!!
+                </p>
+            </div>
+        </section>
+
+
+        <section class="section2-beneficios">
+            <div id="beneficios-texto2">
+                <h1>MAIS BENEFÍCIOS PARA VOCÊ!</h1>
+                
+            </div>
+            <div class="beneficios-colunas3">
+                <div class="beneficios-colunas3-content" >
+                    <h3>Anuidade Zero</h3>
+                        <p>Sem cobrança de anuidade durante todo o período acadêmico.</p>
+                </div>
+                    <div class="beneficios-colunas3-content">
+                        <h3>Pagamentos de Boletos</h3>
+                        <p> Facilidade de pagamento de boletos de contas, mensalidades e serviços diretamente pelo cartão, além da opção de parcelamento de até 5 vezes.</p>
+                    </div>
+                    <div class="beneficios-colunas3-content">
+                        <h3>Cashback em Pagamentos</h3>
+                        <p>Ganhe cashback ao pagar boletos com seu cartão, recebendo uma porcentagem do valor de volta.</p>
+                    </div>
+            </div>
+        </section>
     </main>
+
+
+
+
+
+
+
     <footer>
         <div class="rodape">
             <div class="col1 top">
                 <ul class="ul1 impar">
-                    <h2>StudentCard</h2>
+                    <h2>CampusCard</h2>
                     <li><a href="">Sobre nós</a></li>
                     <li><a href="">Carreiras</a></li>
                     <li><a href="">Empresa</a></li>
@@ -79,7 +118,7 @@
 
         <div class="footerbottom">
             <div class="part1bot bottom">
-                <p id="copyright">2024 - StudentCard.</p>
+                <p id="copyright">2024 - CampusCard.</p>
                 <a href="">Aviso de Privacidade</a>
                 <a href="">Termos de Uso</a>
                 <a href="">Parceiros</a>
@@ -107,7 +146,4 @@
         </div>
     </footer>
 </body>
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 </html>

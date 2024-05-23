@@ -31,10 +31,14 @@ header {
     padding: 10px;
     
 }
-
+header #text-mark {
+    color: darkorange;
+}
 header h1 {
     padding-left: 20px;
     margin-top: 20px;
+    font-size: 2.5em;
+    padding-bottom: 20px;
 }
 
 nav {
@@ -66,9 +70,9 @@ main #card {
     position: relative;
     top: 50px;
     left: 30px;
-    height: 200px;
-    width: 30vw;
-    border-radius: 20px;
+    height: 12vw;
+    width: 20vw;
+    border-radius: 1vw;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.603);
     filter: saturate(0%);
 }
@@ -77,8 +81,8 @@ main > #fase1 > #card > img {
     position: relative;
     padding-top: 10%;
     padding-bottom: 30%;
-    top: 30px;
-    left: 30px;
+    top: 2vw;
+    left: 2vw;
     width: 20%;
 }
 
@@ -184,9 +188,50 @@ main > #como_ajudar > div > p {
     text-align: right;
 }
 
+
+.section2-beneficios {
+    
+    margin-top: -5px;
+    background-color: #1a1b0f;
+    background-image: none;
+    padding: 10px;    
+    color: white;
+    
+}
+.section2-beneficios h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+#beneficios-texto2  {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+
+    
+}
+.beneficios-colunas3 {
+    display: flex;
+    
+
+}
+.beneficios-colunas3-content {
+    padding: 40px;
+    background-color: rgba(103, 122, 122, 0.13);
+    margin: 0 20px;
+    font-size: 1.2em;
+    border-radius: 25px 25px 0 0;
+    box-shadow:  3px 2px 20px 0px black;
+    width: 33%;
+}
+.beneficios-colunas3-content p {
+    text-align: justify;
+    margin-top: 10px;
+}
+
 footer {
     background-image: url(https://s.tmimgcdn.com/scr/800x500/297400/textura-de-fundo-preto-escuro_297412-original.jpg);     
-    background-size: 30%;
+    background-size: 10%;
     background-color: black; 
     color: whitesmoke;
     margin: auto;

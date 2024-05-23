@@ -1,62 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>StudentCard</title>
+    <title>Boleto</title>
+    <link rel="stylesheet" href="pagamento-boleto.css">
+    <style>
+        main>#caixa>p {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>
-            StudentCard
+            Campus<span id="text-mark">Card</span>
         </h1>
     </header>
-    <nav>
-        <a href="#"><strong>Sobre o StudentCard</strong></a>
-        <a href="#"><strong>Anuidade Zero</strong></a>
-        <a href="#"><strong>Benefícios</strong></a>
-        <a href="#"><strong>Simulação</strong></a>
-        <a href="#"><strong>Fale Conosco</strong></a>
-    </nav>
     <main>
-        <section id="fase1">
-            <div id="card">
-                <img src="img/file.png" alt="chip_card">
-            </div>
-            <div id="peça">
-                <h2>
-                    Peça o seu cartão
-                </h2>
-                <p>
-                    <button><a href="#">PEÇA AQUI</a></button>
-                </p>
-            </div>
+        <h2>
+            Pagamento do Boleto
+        </h2>
+        <section>
+            <p id="codigo">
+                Código de Barras: <input type="number" name="txtvalor" id="valor" required>
+            </p>
+            <p id="parcelamento">
+                Parcelamento:
+                <select name="Parcelamento" id="parcela">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                </select>
+            </p>
         </section>
-        <section id="fase2">
-        <div id="sobre">
-            <h2>
-                Sobre o StudentCard
-            </h2>
-            <p>O StudentCard tem como objetivo principal te ajudar no pagamento da sua mensalidade universitária</p>
-        </div>
-        </section>
-        <section id="como_ajudar">
-            <div>
-                <h2>
-                    Como o StudentCard te ajudará?
-                </h2>
-                <p>
-                    PARCELANDO O BOLETO DA MENSALIDADE DA SUA FACULDADE SEM JUROS!!!
-                </p>
-            </div>
-        </section>
+        <p>
+            <input type="button" value="PAGAR BOLETO" id="gerar" onclick="pagar()">
+        </p>
     </main>
     <footer>
         <div class="rodape">
             <div class="col1 top">
                 <ul class="ul1 impar">
-                    <h2>StudentCard</h2>
+                    <h2>CampusCard</h2>
                     <li><a href="">Sobre nós</a></li>
                     <li><a href="">Carreiras</a></li>
                     <li><a href="">Empresa</a></li>
@@ -89,7 +79,7 @@
 
         <div class="footerbottom">
             <div class="part1bot bottom">
-                <p id="copyright">2024 - StudentCard.</p>
+                <p id="copyright">2024 - CampusCard.</p>
                 <a href="">Aviso de Privacidade</a>
                 <a href="">Termos de Uso</a>
                 <a href="">Parceiros</a>
@@ -117,4 +107,7 @@
         </div>
     </footer>
 </body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </html>

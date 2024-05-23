@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    li {
+        list-style: none;
+        margin-top: 10px;
+    }
+}
+
+body {
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+}
+
+header > h1 {
+    color: white;
+    padding-left: 20px;
+    font-weight: 700;
+}
+header #text-mark {
+    color: darkorange;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.37);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+main:hover {
+    box-shadow: 0px 0px 15px darkgray;
+}
+
+main > h2 {
+    background-color: rgba(0, 0, 0, 0.74);
+    color: white;
+    margin: auto;
+    width: 70%;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    clip-path: polygon(0% 0%, 100% 0,90% 100%,10% 100%);
+}
+
+main > section {
+    width: 80%;
+    margin: auto;
+}
+
+main > section > #codigo {
+    text-align: start;
+}
+
+main > section > p > #valor {
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main > section > #parcelamento {
+    text-align: start;
+}
+
+main > section > p > #parcela {
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 2px;
+    width: 20%;
+}
+
+main > p > #gerar {
+    position: relative;
+    top: 18vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+main > p > #gerar:hover {
+    background-color: black;
+    text-shadow:0px 0px 1px white;
+    border: 1px solid white;
+    color: white;
+}
+
+footer {
+    background-image: url(https://s.tmimgcdn.com/scr/800x500/297400/textura-de-fundo-preto-escuro_297412-original.jpg);     
+    background-size: 10%;
+    background-color: black; 
+    width: 100%;
+    color: whitesmoke;
+    margin: auto;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+}
+
+footer a:hover {
+    color: rgb(212, 207, 207);
+    transition: 0.35s;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 40px;
+}
+
+.col1 {
+    display: flex;
+    justify-content: center;    
+    margin: 0 30px;
+    
+}
+
+.ul1 {
+    margin: 0 120px;
+    font-size: 1.0em;
+    margin-top: 20px;
+}
+
+hr{ 
+    border: 0.3px thin;    
+    border-color: rgba(255, 255, 255, 0.486);
+    width: 90%;    
+    margin: 20px auto;
+}
+
+.footerbottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*alinhamento horizontal */
+    padding: 7px;
+}
+
+.bottom {
+    display: inline-flex;
+    margin: 0 40px;
+}
+
+.part1bot > a {
+    margin: auto 20px;
+}
+
+#copyright::before {
+    content: '\00a9';
+    margin-right: 5px;
+}
+
+.part2bot > a {
+    margin: auto 10px;
+}
+
+.part2bot {
+    position: relative;
+    margin-inline-start: 50px;
+}
+
+svg{
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 1650px) {
+    .ul1 {
+        margin: 0 60px;
+        font-size: 1.0em;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .ul1 {
+        margin: 0 20px;
+        width: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    footer{
+        margin: auto;
+        width: auto;
+    }
+    .ul1 {
+        font-size: auto;
+        margin: 5px 10px;
+        margin-top: 20px;
+
+        
+    }
+    
+    .col1 {
+        display: block;
+        margin: 0 auto;
+    }
+    .impar, .par{
+        margin: 20px;
+
+    }
+    .footerbottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .part1bot {
+        order: 2;
+        margin-top: 30px;
+        font-size: 1em;
+    }
+    .part2bot{
+        order: 1;
+        
+    }
+    .part2bot > a {
+        margin: auto 20px;
+    }
+}
+
+.swal2-title {
+    font-size: 1.2em;
+}
