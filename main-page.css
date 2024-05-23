@@ -73,7 +73,7 @@ nav {
     justify-content: space-around;
     background-color: black;
     z-index: 10;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
 }
 
 nav a {
@@ -158,7 +158,7 @@ main > #fase2 {
 }
 
 main #fase2 {
-    background-image: url(img/estudantes-universitarios.avif);
+    background-image: url(img/estudantes-universitarios\ \(1\).jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
