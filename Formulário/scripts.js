@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         try {
 
-            await new Promise(resolve => setTimeout(resolve, 500)); // Simulando uma espera de 500ms
+            await new Promise(resolve => setTimeout(resolve, 500)); 
  
             popupMessage.textContent = "Mensagem enviada com sucesso!";
             form.reset();
