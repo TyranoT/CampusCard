@@ -224,6 +224,7 @@ main > #como_ajudar > div > p {
     text-align: right;
 }
 
+/*INICIO BENEFICIOS*/
 
 .section2-beneficios {
     background-color: #1a1b0f;
@@ -265,6 +266,11 @@ main > #como_ajudar > div > p {
     width: 100%;
 }
 
+/*FIM BENEFICIOS*/
+
+
+/*INICIO FOOTER*/
+
 footer {
     background-image: url(https://s.tmimgcdn.com/scr/800x500/297400/textura-de-fundo-preto-escuro_297412-original.jpg);     
     background-size: 10%;
@@ -288,13 +294,13 @@ footer a:hover {
     
     
 }
-.col1 {
+.div-campuscard-produtos, .div-explore-vejatambem {
     display: flex;
     justify-content: center;    
     margin: 0 30px;
     
 }
-.ul1 {
+.lista-campuscard-produtos-explore-vejatambem {
     margin: 0 120px;
     font-size: 1.0em;
     margin-top: 20px;
@@ -314,32 +320,45 @@ hr{
     align-items: center; /*alinhamento horizontal */
     padding: 7px;
 }
+
+
 .bottom {
     display: inline-flex;
     margin: 0 40px;
 }
-.part1bot > a {
+
+
+.div-copyright-privacidade-termos-parceiros > a {
     margin: auto 20px;
 }
+
+
 #copyright::before {
     content: '\00a9';
     margin-right: 5px;
 }
-.part2bot > a {
+
+
+
+.div-socialmedia > a {
     margin: auto 10px;
 }
-.part2bot {
-    position: relative;
-    margin-inline-start: 50px;
-    
+
+
+.div-socialmedia {    
+    margin-inline-start: 50px;    
 }
+
+
 svg{
     width: 25px;
     height: 25px;
 }
 
+/*FIM FOOTER*/
+
 @media (max-width: 1650px) {
-    .ul1 {
+    .lista-campuscard-produtos-explore-vejatambem {
         margin: 0 60px;
         font-size: 1.0em;
         margin-top: 20px;
@@ -347,7 +366,7 @@ svg{
 }
 
 @media (max-width: 1220px) {
-    .ul1 {
+    .lista-campuscard-produtos-explore-vejatambem {
         margin: 0 20px;
         width: auto;
         margin-top: 20px;
@@ -370,7 +389,7 @@ svg{
         margin: auto;
         width: auto;
     }
-    .ul1 {
+    .lista-campuscard-produtos-explore-vejatambem {
         font-size: auto;
         margin: 5px 10px;
         margin-top: 20px;
@@ -378,28 +397,25 @@ svg{
         
     }
     
-    .col1 {
+    .div-campuscard-produtos, .div-explore-vejatambem {
         display: block;
         margin: 0 auto;
     }
-    .impar, .par{
-        margin: 20px;
-
-    }
+    
     .footerbottom{
         display: flex;
         flex-direction: column;
     }
-    .part1bot {
+    .div-copyright-privacidade-termos-parceiros {
         order: 2;
         margin-top: 30px;
         font-size: 1em;
     }
-    .part2bot{
+    .div-socialmedia{
         order: 1;
         
     }
-    .part2bot > a {
+    .div-socialmedia > a {
         margin: auto 20px;
     }
 }
